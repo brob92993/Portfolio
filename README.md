@@ -4,3 +4,15 @@ This weeks homework was to make a portfolio using the HTML and CSS skills that w
 
 
 
+
+
+
+
+![Screenshot1](images/screenshotone.PNG)
+
+
+
+![Screenshot2](images/screenshottwo.PNG)
+
+
+[Live Website](https://brob92993.github.io/Week2-Portfolio/)
