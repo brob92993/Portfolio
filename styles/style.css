@@ -31,7 +31,7 @@ h6 {
  
 
 p {
-    margin: 0;
+    margin: 5px;
 }
 
 /*flex styling*/
@@ -109,6 +109,14 @@ nav a:hover {
     line-height: 1.5;
     display: inline;
 }
+img {
+    max-width: 25%;
+    max-height: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /*Page Styling*/
 .page-wrapper {
@@ -127,22 +135,23 @@ nav a:hover {
 }
 
 .section h2 {
-    flex: 1 1 50%;
+    flex: 1 1 100%;
     text-align: center;
     padding-right: 10px;
     border-right: 5px;
-    font-size: 2vw;
+    font-size: 20px;
     line-height: 1.5;
 }
 
 .section h3 {
-    flex: 1 1 50%;
+    flex: 1 1 100%;
     text-align: center;
     padding-right: 10px;
     border-right: 5px;
-    font-size: 2vw;
+    font-size: 20px;
     line-height: 1.5;
 }
+
 /*Flex container and item styling */
 .flex-container {
     display: flex;
@@ -155,17 +164,23 @@ nav a:hover {
     border: 5px solid var(--secondary);
     background-color: none;
     color: black;
-    min-height: 150px;
+    min-height: 100px;
     max-height: 150px;
     display: flex;
-    align-items: flex-end;
-    padding: 5%;
-    margin: 5% 5% 5% 5%;
+    align-items: center;
+    padding: 2%;
+    margin: 2% 2% 2% 2%;
     text-decoration: black;
     background-blend-mode: soft-light;
     background-size: 150%;
     transition: all .20s;
     font-size: 12px;
+}
+
+.flex-item:first-child {
+    min-height: 200px;
+    min-width: 75px;
+    flex-basis: 80%;
 }
 
 .flex-item:hover {
@@ -180,6 +195,7 @@ nav a:hover {
 .flex-item h3 {
     font-size: 20px
 }
+/* Contacts/Footer styling */
 
 .contact address {
     display: flex;
@@ -187,23 +203,31 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    flex: 1 1 50%;
 }
 
 .contact address a {
     color:rgba(28, 29, 33, 1);
     padding: 20px;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 15px;
     font-style: italic;
     background-position: bottom;
     transition: all .20s ease-in;
     margin: 5% 0 5% 0;
     display: flex;
-}
+    }
 
 .contact address a:hover {
  background-size: 100% 80%;
  color:rgba(146, 204, 206, 1)   
+}
+
+
+
+.contact address div {
+ padding: 0;
+ margin: 0;   
 }
 
 
@@ -239,11 +263,26 @@ header {
 header h1 {
         width: 100%;
         padding: 5px;
-        margin-bottom: 10px;
-        font-size: 10vw;
+        margin-bottom: 0;
+        font-size: 20px;
 }
     
 header nav {
         justify-content: center;
     }
+}
+
+@media screen and (max-width: 768px) {
+.flex-item{
+    flex-basis: 100%;
+}
+.flex-item:first-child {
+    flex-basis: 100%;
+    min-height: 170px;
+}
+
+.contact address {
+  flex-direction: column;
+  align-items: flex-start;  
+}    
 }
