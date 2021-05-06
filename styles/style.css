@@ -112,18 +112,18 @@ nav a:hover {
 
 /*Page Styling*/
 .page-wrapper {
-    max-width: 90%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 .section {
-    margin: 0;
+    margin: 2%;
     padding: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:space-around;
+    justify-content: center;
 }
 
 .section h2 {
@@ -143,9 +143,10 @@ nav a:hover {
     font-size: 2vw;
     line-height: 1.5;
 }
-
+/*Flex container and item styling */
 .flex-container {
     display: flex;
+    flex: 1 1 100%;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -154,17 +155,16 @@ nav a:hover {
     border: 5px solid var(--secondary);
     background-color: none;
     color: black;
-    min-height: 100px;
-    max-height: 100px;
-    flex: 1 1 75%;
+    min-height: 150px;
+    max-height: 150px;
     display: flex;
     align-items: flex-end;
-    padding: 0 0 10px 0;
-    margin: .5px;
+    padding: 5%;
+    margin: 5% 5% 5% 5%;
     text-decoration: black;
     background-blend-mode: soft-light;
     background-size: 150%;
-    transition: all .25s;
+    transition: all .20s;
     font-size: 12px;
 }
 
@@ -179,4 +179,71 @@ nav a:hover {
 
 .flex-item h3 {
     font-size: 20px
+}
+
+.contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.contact address a {
+    color:rgba(28, 29, 33, 1);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: italic;
+    background-position: bottom;
+    transition: all .20s ease-in;
+    margin: 5% 0 5% 0;
+    display: flex;
+}
+
+.contact address a:hover {
+ background-size: 100% 80%;
+ color:rgba(146, 204, 206, 1)   
+}
+
+
+/*Portfolio Images*/
+.projectone {
+    background-image: url("../images/portfolio-image-1.jpg");
+}
+
+.projecttwo {
+    background-image: url("../images/portfolio-image-1.jpg");
+}
+
+.projectthree {
+    background-image: url("../images/portfolio-image-1.jpg");
+}
+
+.projectfour {
+    background-image: url("../images/portfolio-image-1.jpg");
+}
+
+.projectfive {
+    background-image: url("../images/portfolio-image-1.jpg");
+}
+
+/*Media screen resizing*/
+@media screen and (max-width: 980px) {
+header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+}
+
+header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+}
+    
+header nav {
+        justify-content: center;
+    }
 }
